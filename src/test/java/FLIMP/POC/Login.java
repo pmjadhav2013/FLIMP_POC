@@ -31,7 +31,7 @@ public class Login extends BaseClass {
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 
 	}
-
+// this is testing project
 	// @Test(priority = 1, dataProvider = "validDataSupplier")
 
 	@Test(priority = 1)
@@ -154,21 +154,21 @@ public class Login extends BaseClass {
 		System.out.println("\n * " + errorMessage + " * " + " - error message is displayed");
 	}
 
-//	@Test(priority = 3)
-//	public void VerifyLoginWithEmptyUsername() {
-//		// driver.findElement(By.id("login_id")).sendKeys(" ");
-//		HomePage homepage = new HomePage(driver);
-//		// driver.findElement(By.xpath("//button[@type='submit']")).click();
-//		homepage.ClickOnLoginInButton();
-//		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
-//
-//		// Get the text of the validation message
-//		String messageText = validationMessage.getAttribute("validationMessage");
-//
-//		// check the popup is displayed / warning is displayed
-//		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
-//		System.out.println(messageText);
-//	}
+	@Test(priority = 3)
+	public void VerifyLoginWithEmptyUsername() {
+		// driver.findElement(By.id("login_id")).sendKeys(" ");
+		HomePage homepage = new HomePage(driver);
+		// driver.findElement(By.xpath("//button[@type='submit']")).click();
+		homepage.ClickOnLoginInButton();
+		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
+
+		// Get the text of the validation message
+		String messageText = validationMessage.getAttribute("validationMessage");
+
+		// check the popup is displayed / warning is displayed
+		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
+		System.out.println(messageText);
+	}
 //
 //	@Test(priority = 3)
 //	public void VerifyLoginWithEmptyPassword() {
