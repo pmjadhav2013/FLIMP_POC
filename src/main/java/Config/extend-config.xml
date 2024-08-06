@@ -1,0 +1,5 @@
+<configuration>
+    <reportName>POC Project Report</reportName>
+    <reportHeadline>Test Execution Report</reportHeadline>
+    <theme>standard</theme>
+</configuration>
