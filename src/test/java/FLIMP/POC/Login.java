@@ -207,11 +207,11 @@ public class Login extends BaseClass {
 
 		Assert.assertTrue(driver.getCurrentUrl().contains(prop.getProperty("url")));
 		// Assert.fail();
-
+		// changes
 		Thread.sleep(3000);
 		System.out.println("\n User logged out successfully \n\n");
 	}
-
+	// changes
 	// @AfterTest
 	@AfterMethod
 	public void tearDown() {
