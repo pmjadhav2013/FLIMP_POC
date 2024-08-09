@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\EclipseWorkSpace_2024\POC\testng.xml</span>
+                    <span>C:\Users\Prashant Jadhav\git\FLIMP_POC\LoginLogouttest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="FLIMP.POC.EndToEndTest" class="method navigator-link" hash-for-method="FlimpEndToEndTest">FlimpEndToEndTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FLIMP.POC.Login" class="method navigator-link" hash-for-method="VerifyUserCanAbleToLogout">VerifyUserCanAbleToLogout</a> <!-- method navigator-link -->
@@ -120,6 +115,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="FLIMP.POC.Login" class="method navigator-link" hash-for-method="VerifyLoginWithEmptyUsername">VerifyLoginWithEmptyUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FLIMP.POC.Login" class="method navigator-link" hash-for-method="VerifyLoginWithInValidCredentials(anyone12345, japh7vej123)">VerifyLoginWithInValidCredentials(anyone12345, japh7vej123)</a> <!-- method navigator-link -->
@@ -155,48 +155,8 @@
                   <span class="method-name">VerifyUserCanAbleToLogout</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at FLIMP.POC.Login.VerifyUserCanAbleToLogout(Login.java:208)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">FLIMP.POC.EndToEndTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="FlimpEndToEndTest">
-                  </a> <!-- FlimpEndToEndTest -->
-                  <span class="method-name">FlimpEndToEndTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 5.000
-  (Session info: chrome=127.0.6533.74)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [53a2288c64575ed3218ce7bf2b49e497, clickElement {id=f.F01544A6308AB8D30C9067627AB86319.d.BC26F5D5A885D383769669D73FBE4C9B.e.1937}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.74, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\PRASHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52058/devtoo..., se:cdpVersion: 127.0.6533.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (53a2288c64575ed3218ce7bf2b49e497)] -&gt; xpath: //*[@class = &apos;form-group col-md-12 text-center&apos;]//a]
-Session ID: 53a2288c64575ed3218ce7bf2b49e497
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at PageObjects.ContentLibraryPage.EditTheLatestCreatedMicrosite(ContentLibraryPage.java:108)
-	at FLIMP.POC.EndToEndTest.FlimpEndToEndTest(EndToEndTest.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -208,6 +168,13 @@ Session ID: 53a2288c64575ed3218ce7bf2b49e497
               <span class="class-name">FLIMP.POC.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginWithEmptyUsername">
+                  </a> <!-- VerifyLoginWithEmptyUsername -->
+                  <span class="method-name">VerifyLoginWithEmptyUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="VerifyLoginWithInValidCredentials(anyone12345, japh7vej123)">
@@ -228,7 +195,7 @@ Session ID: 53a2288c64575ed3218ce7bf2b49e497
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\EclipseWorkSpace_2024\POC\testng.xml</span>
+            <span class="header-content">C:\Users\Prashant Jadhav\git\FLIMP_POC\LoginLogouttest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -236,12 +203,13 @@ Session ID: 53a2288c64575ed3218ce7bf2b49e497
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.LogListener&quot;/&gt;
     &lt;listener class-name=&quot;Listeners.MyListener&quot;/&gt;
+    &lt;listener class-name=&quot;CustomReport.CustomEmailableReport&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;FLIMP.POC.Login&quot;/&gt;
-      &lt;class name=&quot;FLIMP.POC.EndToEndTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -255,7 +223,7 @@ Session ID: 53a2288c64575ed3218ce7bf2b49e497
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,26 +251,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FlimpEndToEndTest')
-data.setCell(0, 2, 'FLIMP.POC.EndToEndTest')
-data.setCell(0, 3, 39681);
+data.setCell(0, 1, 'VerifyUserCanAbleToLogout')
+data.setCell(0, 2, 'FLIMP.POC.Login')
+data.setCell(0, 3, 8856);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyUserCanAbleToLogout')
+data.setCell(1, 1, 'VerifyLoginWithValidCredentials')
 data.setCell(1, 2, 'FLIMP.POC.Login')
-data.setCell(1, 3, 10805);
+data.setCell(1, 3, 3153);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyLoginWithValidCredentials')
+data.setCell(2, 1, 'VerifyLoginWithInValidCredentials')
 data.setCell(2, 2, 'FLIMP.POC.Login')
-data.setCell(2, 3, 4012);
+data.setCell(2, 3, 983);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyLoginWithInValidCredentials')
+data.setCell(3, 1, 'VerifyLoginWithEmptyUsername')
 data.setCell(3, 2, 'FLIMP.POC.Login')
-data.setCell(3, 3, 2077);
+data.setCell(3, 3, 123);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -335,55 +303,50 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginWithValidCredentials</span>
-                <span class="method-start">12850 ms</span>
+                <span class="method-start">9252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16925 ms</span>
+                <span class="method-start">12409 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">17815 ms</span>
+                <span class="method-start">12685 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginWithInValidCredentials(anyone12345, japh7vej123)</span>
-                <span class="method-start">26198 ms</span>
+                <span class="method-start">18337 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28282 ms</span>
+                <span class="method-start">19322 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">28857 ms</span>
+                <span class="method-start">19586 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginWithEmptyUsername</span>
+                <span class="method-start">24455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">24882 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerifyUserCanAbleToLogout</span>
-                <span class="method-start">36771 ms</span>
+                <span class="method-start">29701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48240 ms</span>
+                <span class="method-start">38755 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">FLIMP.POC.EndToEndTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@1c26273d)</span>
-                <span class="method-start">48931 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">FlimpEndToEndTest</span>
-                <span class="method-start">57269 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">97721 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

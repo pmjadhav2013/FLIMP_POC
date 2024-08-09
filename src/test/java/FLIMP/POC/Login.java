@@ -31,7 +31,7 @@ public class Login extends BaseClass {
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 
 	}
-
+// this is testing project
 	// @Test(priority = 1, dataProvider = "validDataSupplier")
 
 	@Test(priority = 1)
@@ -154,40 +154,40 @@ public class Login extends BaseClass {
 		System.out.println("\n * " + errorMessage + " * " + " - error message is displayed");
 	}
 
-//	@Test(priority = 3)
-//	public void VerifyLoginWithEmptyUsername() {
-//		// driver.findElement(By.id("login_id")).sendKeys(" ");
-//		HomePage homepage = new HomePage(driver);
-//		// driver.findElement(By.xpath("//button[@type='submit']")).click();
-//		homepage.ClickOnLoginInButton();
-//		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
+	@Test(priority = 3)
+	public void VerifyLoginWithEmptyUsername() {
+		// driver.findElement(By.id("login_id")).sendKeys(" ");
+		HomePage homepage = new HomePage(driver);
+		// driver.findElement(By.xpath("//button[@type='submit']")).click();
+		homepage.ClickOnLoginInButton();
+		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
+
+		// Get the text of the validation message
+		String messageText = validationMessage.getAttribute("validationMessage");
+
+		// check the popup is displayed / warning is displayed
+		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
+		System.out.println(messageText);
+	}
 //
-//		// Get the text of the validation message
-//		String messageText = validationMessage.getAttribute("validationMessage");
-//
-//		// check the popup is displayed / warning is displayed
-//		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
-//		System.out.println(messageText);
-//	}
-//
-//	@Test(priority = 3)
-//	public void VerifyLoginWithEmptyPassword() {
-//		// driver.findElement(By.id("login_id")).sendKeys(" ");
-//		// driver.findElement(By.id("password")).sendKeys("japh7vej");
-//
-//		HomePage homepage = new HomePage(driver);
-//		homepage.ClickOnLoginInButton();
-//
-//		// driver.findElement(By.xpath("//button[@type='submit']")).click();
-//
-//		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
-//
-//		// Get the text of the validation message
-//		String messageText = validationMessage.getAttribute("validationMessage");
-//		System.out.println(messageText);
-//		// check the popup is displayed / warning is displayed
-//		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
-//	}
+	@Test(priority = 3)
+	public void VerifyLoginWithEmptyPassword() {
+		// driver.findElement(By.id("login_id")).sendKeys(" ");
+		// driver.findElement(By.id("password")).sendKeys("japh7vej");
+
+		HomePage homepage = new HomePage(driver);
+		homepage.ClickOnLoginInButton();
+
+		// driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+		WebElement validationMessage = driver.findElement(By.cssSelector("input:invalid"));
+
+		// Get the text of the validation message
+		String messageText = validationMessage.getAttribute("validationMessage");
+		System.out.println(messageText);
+		// check the popup is displayed / warning is displayed
+		Assert.assertTrue(driver.findElement(By.cssSelector("input:invalid")).isDisplayed());
+	}
 
 	@Test(priority = 3)
 	public void VerifyUserCanAbleToLogout() throws InterruptedException {
@@ -207,26 +207,27 @@ public class Login extends BaseClass {
 
 		Assert.assertTrue(driver.getCurrentUrl().contains(prop.getProperty("url")));
 		// Assert.fail();
-
+		// changes
 		Thread.sleep(3000);
 		System.out.println("\n User logged out successfully \n\n");
 	}
-
+	// changes
 	// @AfterTest
 	@AfterMethod
 	public void tearDown() {
 
 		driver.quit();
 	}
-
-//	@Test
-//	public void loginWithPOCUser() {
-//		HomePage homepage = new HomePage(driver);
-//		homepage.EnterUserName(prop.getProperty("validUserName_POC"));
-//		homepage.EnterPassword(prop.getProperty("validPassword_POC"));
-//		homepage.ClickOnLoginInButton();
-//	
-//		System.out.println("\n POC User Logged in Successfully");
-//	}
+	// changes
+	@Test
+	public void loginWithPOCUser() {
+		HomePage homepage = new HomePage(driver);
+		homepage.EnterUserName(prop.getProperty("validUserName_POC"));
+		homepage.EnterPassword(prop.getProperty("validPassword_POC"));
+		homepage.ClickOnLoginInButton();
+	
+		System.out.println("\n POC User Logged in Successfully");
+		// changes
+	}
 
 }

@@ -45,7 +45,7 @@ public class EditorPage extends BaseClass {
 //		System.out.println("\n Add button option is displayed");
 //	}
 
-	//@Test
+	@Test
 	public void verifyUserCanOpenTheEditorPage() throws InterruptedException {
 		HomePage homepage = new HomePage(driver);
 		EditorPageObjects EditorPageObjects = new EditorPageObjects(driver);
@@ -81,17 +81,17 @@ public class EditorPage extends BaseClass {
 		EditorPageObjects.AddButtonElementAndVerify();
 	}
 
-//	@Test
-//	public void Verify_Preview_Button_Is_Visible_On_The_Editorpage() throws InterruptedException {
-//		EditorPageObjects EditorPageObjects = new EditorPageObjects(driver);
-//		verifyUserCanOpenTheEditorPage();
-//		// check preview button is visible 
-//		EditorPageObjects.CheckPreviewButtonIsDisplayed();		
-//	}
+	@Test
+	public void Verify_Preview_Button_Is_Visible_On_The_Editorpage() throws InterruptedException {
+		EditorPageObjects EditorPageObjects = new EditorPageObjects(driver);
+		verifyUserCanOpenTheEditorPage();
+		// check preview button is visible 
+		EditorPageObjects.CheckPreviewButtonIsDisplayed();		
+	}
 
 	@Test
 	public void Verify_Button_Is_Visible_in_the_Preview() throws InterruptedException {
-		
+		//
 		//VerifyUserCanAbleToChangeTheButtonName();
 		VerifyUserCanAddTheButtonElement();
 		EditorPageObjects EditorPageObjects = new EditorPageObjects(driver);
