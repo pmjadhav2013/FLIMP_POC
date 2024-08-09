@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-07T07:28:23 IST" name="Suite" finished-at="2024-08-07T07:29:04 IST" duration-ms="41180">
+  <suite started-at="2024-08-08T10:33:41 IST" name="Suite" finished-at="2024-08-08T10:37:07 IST" duration-ms="205898">
     <groups>
     </groups>
-    <test started-at="2024-08-07T07:28:23 IST" name="Test" finished-at="2024-08-07T07:29:04 IST" duration-ms="41180">
+    <test started-at="2024-08-08T10:33:41 IST" name="Test" finished-at="2024-08-08T10:37:07 IST" duration-ms="205898">
       <class name="FLIMP.POC.Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:24 IST" name="setup" finished-at="2024-08-07T07:28:33 IST" duration-ms="9250" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:33:42 IST" name="setup" finished-at="2024-08-08T10:33:49 IST" duration-ms="7567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLoginWithValidCredentials()[pri:1, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:33 IST" name="VerifyLoginWithValidCredentials" finished-at="2024-08-07T07:28:36 IST" duration-ms="3153" status="PASS">
+        <test-method signature="loginWithPOCUser()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:33:49 IST" name="loginWithPOCUser" finished-at="2024-08-08T10:33:53 IST" duration-ms="3534" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:36 IST" name="tearDown" finished-at="2024-08-07T07:28:36 IST" duration-ms="267" status="PASS">
+        </test-method> <!-- loginWithPOCUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:33:53 IST" name="tearDown" finished-at="2024-08-08T10:33:53 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:36 IST" name="setup" finished-at="2024-08-07T07:28:42 IST" duration-ms="5651" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:33:53 IST" name="setup" finished-at="2024-08-08T10:33:59 IST" duration-ms="5825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:42 IST" name="VerifyLoginWithInValidCredentials" data-provider="InvalidDataSupplier" finished-at="2024-08-07T07:28:43 IST" duration-ms="983" status="PASS">
+        <test-method signature="VerifyLoginWithValidCredentials()[pri:1, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:33:59 IST" name="VerifyLoginWithValidCredentials" finished-at="2024-08-08T10:34:02 IST" duration-ms="3221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:02 IST" name="tearDown" finished-at="2024-08-08T10:34:02 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:02 IST" name="setup" finished-at="2024-08-08T10:34:08 IST" duration-ms="5688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:08 IST" name="VerifyLoginWithInValidCredentials" data-provider="InvalidDataSupplier" finished-at="2024-08-08T10:34:09 IST" duration-ms="1357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,27 +51,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithInValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:43 IST" name="tearDown" finished-at="2024-08-07T07:28:43 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:09 IST" name="tearDown" finished-at="2024-08-08T10:34:10 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:43 IST" name="setup" finished-at="2024-08-07T07:28:48 IST" duration-ms="4869" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:10 IST" name="setup" finished-at="2024-08-08T10:34:16 IST" duration-ms="6160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLoginWithEmptyUsername()[pri:3, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:48 IST" name="VerifyLoginWithEmptyUsername" finished-at="2024-08-07T07:28:48 IST" duration-ms="123" status="PASS">
+        <test-method signature="VerifyLoginWithEmptyPassword()[pri:3, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:16 IST" name="VerifyLoginWithEmptyPassword" finished-at="2024-08-08T10:34:16 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginWithEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:16 IST" name="tearDown" finished-at="2024-08-08T10:34:16 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:16 IST" name="setup" finished-at="2024-08-08T10:34:22 IST" duration-ms="5327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyLoginWithEmptyUsername()[pri:3, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:22 IST" name="VerifyLoginWithEmptyUsername" finished-at="2024-08-08T10:34:22 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithEmptyUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:48 IST" name="tearDown" finished-at="2024-08-07T07:28:49 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:22 IST" name="tearDown" finished-at="2024-08-08T10:34:22 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:49 IST" name="setup" finished-at="2024-08-07T07:28:53 IST" duration-ms="4819" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:22 IST" name="setup" finished-at="2024-08-08T10:34:27 IST" duration-ms="5045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyUserCanAbleToLogout()[pri:3, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:28:53 IST" name="VerifyUserCanAbleToLogout" finished-at="2024-08-07T07:29:02 IST" duration-ms="8856" status="FAIL">
+        <test-method signature="VerifyUserCanAbleToLogout()[pri:3, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:27 IST" name="VerifyUserCanAbleToLogout" finished-at="2024-08-08T10:34:36 IST" duration-ms="8848" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -103,11 +127,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserCanAbleToLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@206a70ef]" started-at="2024-08-07T07:29:03 IST" name="tearDown" finished-at="2024-08-07T07:29:04 IST" duration-ms="1844" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.Login@292b08d6]" started-at="2024-08-08T10:34:36 IST" name="tearDown" finished-at="2024-08-08T10:34:37 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FLIMP.POC.Login -->
+      <class name="FLIMP.POC.EndToEndTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:FLIMP.POC.EndToEndTest@4b2bac3f]" started-at="2024-08-08T10:34:37 IST" name="setup" finished-at="2024-08-08T10:34:42 IST" duration-ms="5541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@991cbde]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FlimpEndToEndTest()[pri:0, instance:FLIMP.POC.EndToEndTest@4b2bac3f]" started-at="2024-08-08T10:34:42 IST" name="FlimpEndToEndTest" finished-at="2024-08-08T10:37:06 IST" duration-ms="144250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlimpEndToEndTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FLIMP.POC.EndToEndTest@4b2bac3f]" started-at="2024-08-08T10:37:06 IST" name="tearDown" finished-at="2024-08-08T10:37:07 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FLIMP.POC.EndToEndTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
